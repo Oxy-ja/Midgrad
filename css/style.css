@@ -116,7 +116,6 @@ p, a {
 
   .whyWe_cols {
     width: calc(33% - 0.3rem);
-/*     height: 35vh; */
     padding: 5%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
@@ -232,7 +231,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 
 footer {
   background: #000;
-/*   padding: 5vh; */
   height: 30vh;
 }
 
@@ -273,6 +271,7 @@ h3 {
 p, a {
   font-size: 1.5rem;
 }
+    
 header {
   height: 60vh;
 }
@@ -317,7 +316,6 @@ header {
   }
   .whyWe_cols {
     width: calc(50% - 0.3rem);
-/*     height: calc(33% - 1rem); */
     }  
       .whyWe_cols img {
     width: 20%;
@@ -325,7 +323,7 @@ header {
 
 
 @media (max-width: 991px){
-  header, footer  {
+  header {
     min-height: 70vh;
   }
 
