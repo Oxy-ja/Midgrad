@@ -272,12 +272,9 @@ p, a {
   font-size: 1.5rem;
 }
     
-header {
-  height: 60vh;
-}
-
+header, 
 .front::after {
-  height: 50vh;
+  height: 85vh;
 }
 
 .front .inner p {
