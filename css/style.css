@@ -325,7 +325,7 @@ header {
 
 
 @media (max-width: 991px){
-  header {
+  header, footer  {
     min-height: 70vh;
   }
 
