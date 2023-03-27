@@ -370,7 +370,7 @@ header {
   }
     
     footer {
-        min-height: 25vh;
+        max-height: 25vh;
     }
 }
 
