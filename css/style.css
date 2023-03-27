@@ -308,7 +308,7 @@ header {
 @media (max-width: 1199px){ 
 
   header {
-    height: 80vh;
+    min-height: 80vh;
   }
 
   
@@ -322,7 +322,7 @@ header {
 
 @media (max-width: 991px){
   header {
-    height: 70vh;
+    min-height: 70vh;
   }
 
  
@@ -330,11 +330,15 @@ header {
 
 @media (max-width: 767px){
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .front::after {
     height: 70vh;
   }
+
+  .logo img {
+    max-height: 20vh;
+}
  }
 
 @media (max-width: 575px){ 
