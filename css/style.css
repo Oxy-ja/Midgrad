@@ -306,7 +306,7 @@ header {
 }
 
 @media (max-width: 1199px){ 
-
+    
   header {
     min-height: 80vh;
   }
@@ -318,6 +318,10 @@ header {
   .whyWe_cols {
     width: calc(50% - 0.3rem);
 /*     height: calc(33% - 1rem); */
+      
+      .whyWe_cols img {
+    width: 20%;
+      }
 }
 
 @media (max-width: 991px){
