@@ -366,9 +366,12 @@ header {
 
   .whyWe_cols {
     width: 100%;
-/*     height: 20%; */
     margin-bottom: 15px;
   }
+    
+    footer {
+        min-height: 25vh;
+    }
 }
 
 @media (max-width: 362px){ 
