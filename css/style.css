@@ -61,7 +61,6 @@ header {
     background-size: cover;
     text-align: left;
     min-height: 100vh;
-    height: auto;
     color: #fff;
 }
   
@@ -81,7 +80,6 @@ header {
 .inner {
     top: 60%;
     position: absolute;
-    width: 47%;
     z-index: 2;
 }
   
