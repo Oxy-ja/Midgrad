@@ -307,7 +307,7 @@ header {
 
 @media (max-width: 1199px){ 
     
-  header {
+  header, footer {
     min-height: 80vh;
   }
 
@@ -333,6 +333,9 @@ header {
  }
 
 @media (max-width: 767px){
+    container {
+        width: 100%;
+    }
   h1 {
     font-size: 3rem;
   }
