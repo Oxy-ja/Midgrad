@@ -232,7 +232,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 
 footer {
   background: #000;
-  padding: 5vh;
+/*   padding: 5vh; */
   height: 30vh;
 }
 
