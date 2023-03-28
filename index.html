@@ -8,44 +8,35 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>
       
-  .itc-slider__item {
-      flex: none; 
-      width: 33%; 
-      margin-right: 1vw;
-      height: 60vh;
+      .itc-slider__items {
+      counter-reset: slide;
+    }
+     .itc-slider__item {
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%;
+      height: 90vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: rgba(255,255,255, 0.8);
+      font-size: 7rem;
       background-size: cover;
       background-repeat: no-repeat;
-  }
+      margin-right: 10px;
+    }
 
-  .itc-slider__item:nth-child(1) {
-    background-image: url(https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8a2l0Y2hlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-  }
-
-  .itc-slider__item:nth-child(2) {
-    background-image: url(https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a2l0Y2hlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-  }
-
-  .itc-slider__item:nth-child(3) {
+    .itc-slider__item:nth-child(1) {
     background-image: url(https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  }
+     .itc-slider__item:nth-child(2) {
+    background-image: url(https://plus.unsplash.com/premium_photo-1673830185872-c6f8bc12720e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  }
+     .itc-slider__item:nth-child(3) {
+    background-image: url(https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
   }
 
   .itc-slider__item:nth-child(4) {
-      background-image: url(https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8a2l0Y2hlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-  }
-  
-  @media (max-width: 1199px) {
-    .itc-slider__item {
-      width: 45vw;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .itc-slider__item {
-      width: 70vw;
-    }
+    background-image: url(https://images.unsplash.com/photo-1600684388091-627109f3cd60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
   }
 
   .itc-slider__item:nth-child(5) {
@@ -61,6 +52,34 @@
   .itc-slider__item:nth-child(8) {
     background-image: url(https://images.unsplash.com/photo-1600684388091-627109f3cd60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
   }
+
+  
+ 
+
+    @media (max-width: 1899px) {
+     .itc-slider__item {
+      flex: 0 0 50%;
+      max-width: 50%;
+      height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 7rem;
+    }
+    }
+    
+    @media (max-width: 1200px){
+
+    .itc-slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      counter-increment: slide;
+      height: 75vh;
+      position: relative;
+    }
+
+    }
     </style>
 </head>
 <body>
@@ -68,7 +87,7 @@
         <div class="container">
             <div class="header_top">
                 <div class="logo">
-                    <a href="#" class="logo-link"> <img src="./img/logo.jpg" alt=""> </a>
+                    <a href="#" class="logo-link"> <img src="/img/logo.jpg" alt=""> </a>
                 </div>
                 <div class="header_contact">
                 <a class="tn-atom" href="tel:+79324969146">+7 (932) 496-91-46</a>
@@ -77,7 +96,8 @@
             <div class="front" >
                 <div class="inner">
                     <h1>Кухни на заказ</h1>
-      <p>Проектируем и выпускаем корпусную мебель по индивидуальным размерам, а также готовую модульную мебель </p>
+      <p>Проектируем и выпускаем корпусную мебель по индивидуальным размерам, 
+        а также готовую модульную мебель </p>
       <p> У нас Вы можете заказать кухни, гардеробные, спальни, шкафы, а также двери</p>
               </div>
             </div>
@@ -86,32 +106,32 @@
     <main>
         <section class="whyWe container">
             <div class="whyWe_cols">
-                <img src="./img/carpenter.png" alt="">
+                <img src="/img/carpenter.png" alt="">
                 <h3>14 специалистов</h3>
                 <p>выполнят даже самые сложные художественные технические проекты</p>
             </div>
             <div class="whyWe_cols">
-                <img src="./img/tools.png" alt="">
+                <img src="/img/tools.png" alt="">
                 <h3>Собственное производство</h3>
                 <p>которое гарантирует лучшие цены</p>
             </div>
             <div class="whyWe_cols">
-                <img src="./img/calendar.png" alt="">
+                <img src="/img/calendar.png" alt="">
                 <h3>Кухня за 15 дней</h3>
                 <p>оперативное изготовление мебели в срок от 15 дней</p>
             </div>
             <div class="whyWe_cols">
-                <img src="./img/calendar.png" alt="">
+                <img src="/img/calendar.png" alt="">
                 <h3>18 месяцев</h3>
                 <p>бесплатное сервисное обслуживание</p>
             </div>
             <div class="whyWe_cols">
-                <img src="./img/truck.png" alt="">
+                <img src="/img/truck.png" alt="">
                 <h3>Бесплатная доставка</h3>
                 <p>точно в срок</p>
             </div>
             <div class="whyWe_cols">
-                <img src="./img/3d.png" alt="">
+                <img src="/img/3d.png" alt="">
                 <h3>3D дизайн 
                     <br>
                     проект кухни в подарок</h3>
@@ -181,7 +201,7 @@
 <footer>
     <div class="footer container">
         <div class="logo ">
-            <a href="#" class="logo-link"> <img src="./img/logo.jpg" alt=""> </a>
+            <a href="#" class="logo-link"> <img src="/img/logo.jpg" alt=""> </a>
         </div>
         <div class="header_contact">
         <a class="tn-atom" href="tel:+79324969146">+7 (932) 496-91-46</a>
