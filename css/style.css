@@ -433,6 +433,10 @@ footer {
     height: 350px;
   }  
 
+  .logo img {
+    height: 150px;
+  }
+    
   .inner {
     top: 40%;
   }
