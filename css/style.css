@@ -51,7 +51,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 80vw;
-    position: fixed;
+    position: relative;
     margin-top: 1px;
     z-index: 10;
 }
