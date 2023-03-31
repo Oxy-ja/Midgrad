@@ -43,8 +43,7 @@ font-size: 28px;
 }
 
 header {
-  margin-bottom: 100px;
-  padding-bottom: 5%;
+   padding-bottom: 5%;
 }
 
 .header_top {
@@ -94,7 +93,7 @@ header {
 
 .video {
     width: 100vw;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -3px);
     left: 50%;
     z-index: 0;
     position: absolute;
