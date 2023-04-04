@@ -4,222 +4,368 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>МИDГАРD - кухни на заказ</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Мидгард - кухни на заказ</title>
+    <link rel="stylesheet" href="./css/style2.css">
     <style>
       
-      .itc-slider__items {
-      counter-reset: slide;
-    }
-     .itc-slider__item {
-      flex: 0 0 33.3333333333%;
-      max-width: 33.3333333333%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: rgba(255,255,255, 0.8);
-      font-size: 7rem;
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin-right: 10px;
+       
+    @media (min-width: 768px) {
+      .container {
+        margin: 0 auto;
+      }
     }
 
-    .itc-slider__item:nth-child(1) {
-    background-image: url(https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-     .itc-slider__item:nth-child(2) {
-    background-image: url(https://plus.unsplash.com/premium_photo-1673830185872-c6f8bc12720e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-     .itc-slider__item:nth-child(3) {
-    background-image: url(https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-
-  .itc-slider__item:nth-child(4) {
-    background-image: url(https://images.unsplash.com/photo-1600684388091-627109f3cd60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-
-  .itc-slider__item:nth-child(5) {
-    background-image: url(https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-     .itc-slider__item:nth-child(6) {
-    background-image: url(https://plus.unsplash.com/premium_photo-1673830185872-c6f8bc12720e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-     .itc-slider__item:nth-child(7) {
-    background-image: url(https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-
-  .itc-slider__item:nth-child(8) {
-    background-image: url(https://images.unsplash.com/photo-1600684388091-627109f3cd60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGtpdGNoZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-  }
-
-  
- 
-
-    @media (max-width: 1024px) {
-     .itc-slider__item {
-      flex: 0 0 50%;
-      max-width: 50%;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 7rem;
+    @media (min-width: 1200px) {
+      .container {
+        margin: 0 auto;
+      }
     }
-    }
-    
-    @media (max-width: 768px){
 
-    .itc-slider__item {
-      flex: 0 0 100%;
-      max-width: 100%;
-      counter-increment: slide;
-      height: 70vh;
+    .itc-slider {
+      overflow: hidden;
+      padding-bottom: 35px;
+    }
+
+    .itc-slider__wrapper {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    @media (min-width: 200px) {
+      .itc-slider__item {
+        
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+    @media (max-width: 600px){
+      }
+
+    @media (min-width: 768px) {
+      .itc-slider__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .itc-slider__item {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+      }
+    }
+
+    .card {
+      position: relative;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .card__header {
       position: relative;
     }
 
-    @media (max-width: 600px){
-
-.itc-slider__item {
-  height: 30vh;
-}
+    .card__img {
+      display: block;
+      height: auto;
+      max-width: 100%;
     }
-    </style>
-</head>
-<body>
-   <header >
-      <video class="video" loop="loop" autoplay="" muted="">
-        <source src="./video/video_preview_h264.mp4" type="video/webm" />
-      </video>
-        <div class="container">
-            <div class="header_top">
-                <div class="logo">
-                    <a href="#" class="logo-link"> <img src="./img/logo.jpg" alt=""> </a>
-                </div>
-                <div class="header_contact">
-                <a class="tn-atom" href="tel:+79324969146">+7 (932) 496-91-46</a>
-            </div>
-            </div>
-            <div class="front" >
-                <div class="inner">
-                    <h1>Кухни на заказ</h1>
-      <p>Проектируем и выпускаем корпусную мебель по индивидуальным размерам, 
-        а также готовую модульную мебель </p>
-      <p> У нас Вы можете заказать кухни, гардеробные, спальни, шкафы, а также двери</p>
-              </div>
-            </div>
-      </div>
-    </header>
-    <main>
-        <section class="whyWe container">
-            <div class="whyWe_cols">
-                <img src="./img/carpenter.png" alt="">
-                <h3>14 специалистов</h3>
-                <p>выполнят даже самые сложные художественные технические проекты</p>
-            </div>
-            <div class="whyWe_cols">
-                <img src="./img/tools.png" alt="">
-                <h3>Собственное производство</h3>
-                <p>которое гарантирует лучшие цены</p>
-            </div>
-            <div class="whyWe_cols">
-                <img src="./img/calendar.png" alt="">
-                <h3>Кухня за 15 дней</h3>
-                <p>оперативное изготовление мебели в срок от 15 дней</p>
-            </div>
-            <div class="whyWe_cols">
-                <img src="./img/calendar.png" alt="">
-                <h3>18 месяцев</h3>
-                <p>бесплатное сервисное обслуживание</p>
-            </div>
-            <div class="whyWe_cols">
-                <img src="./img/truck.png" alt="">
-                <h3>Бесплатная доставка</h3>
-                <p>точно в срок</p>
-            </div>
-            <div class="whyWe_cols">
-                <img src="./img/3d.png" alt="">
-                <h3>3D дизайн 
-                    <br>
-                    проект кухни в подарок</h3>
-            </div>
 
-        </section>
-<section class="ourProjects">
-    <h2>Выполненные проекты</h2>
+    .card__section {
+      position: absolute;
+      bottom: 6px;
+      left: 10px;
+      background-color: rgb(88,59,42, 0.3);;
+      color: #fff;
+      padding: 6px 10px;
+      font-size: 14px;
+      border-radius: 12px;
+      line-height: 1;
+    }
 
-    
-    
- 
-    
-    <div class="ourProjects_slider">
-    
-      <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
-        <div class="itc-slider__wrapper">
-          <div class="itc-slider__items">
-            <div class="itc-slider__item">
-              <!-- Контент 1 слайда -->
-            </div>
+    .card__title {
+      background: #fafafa;
+      white-space: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.3;
+      padding: 10px 15px;
+      margin: 0;
+      height: 72px;
+    }
 
-            <div class="itc-slider__item">
-              <!-- Контент 2 слайда -->
-            </div>
+    .card__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: flex-start;
+      background: #fafafa;
+      padding: 10px 15px 15px;
+      color: #616161;
+    }
 
-            <div class="itc-slider__item">
-              <!-- Контент 3 слайда -->
-             
-            </div>
-            <div class="itc-slider__item">
-              <!-- Контент 4 слайда -->
-            </div>
+    .card__photo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
 
-            <div class="itc-slider__item">
-              <!-- Контент 5 слайда -->
-            </div>
+    .card__author {
+      margin-left: 6px;
+      margin-bottom: 10px;
+    }
 
-             <div class="itc-slider__item">
-              <!-- Контент 5 слайда -->
-            </div>
+    .card__icon {
+      margin-left: auto;
+      width: 18px;
+      max-height: 20px;
+    }
 
-             <div class="itc-slider__item">
-              <!-- Контент 5 слайда -->
-            </div>
-            
-            <div class="itc-slider__item">
-              <!-- Контент 5 слайда -->
-            </div>
-          </div>
-        </div>
-        <button class="itc-slider__btn itc-slider__btn_prev"></button>
-        <button class="itc-slider__btn itc-slider__btn_next"></button>
-      </div>
-    
-    </div>
-    
-</section>
-<section class="lorem container">
+    .card__views {
+      margin-left: 6px;
+    }
 
-
-  <h2>Lorem ipsum dolor sit amet consectetur</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate possimus facilis, odit earum qui. Est quaerat soluta sequi iure, molestias amet sint obcaecati fugiat, ratione nisi voluptates dignissimos facilis!</p>
-
-</section>
-</main>
-<footer>
-    <div class="footer container">
-        <div class="logo ">
-            <a href="#" class="logo-link"> <img src="./img/logo.jpg" alt=""> </a>
-        </div>
-        <div class="header_contact">
-        <a class="tn-atom" href="tel:+79324969146">+7 (932) 496-91-46</a>
-    </div>
-    
-</div>
-</footer>
+    .itc-slider__btn {
+      background-color: unset;
+    }
 
    
-  <script src="./js/app.js"></script>
- 
+    .itc-slider__indicators {
+      bottom: 0;
+    }
+
+    .itc-slider__indicator {
+      background-color: #eee;
+    }
+
+    .itc-slider__indicator_active {
+      background-color: #757575;
+    }
+  </style>
+   
+    
+</head>
+<body>
+    <header>
+        <div class="header container">
+            <a href="" class="logo">
+                <img src="./img/logo.jpg" alt="">
+            </a>
+            <div class="contacts">
+                <ul class="all_contacts">
+                    <li class="all_contacts-item">
+                        <a href="https://t.me/midgard_vmr" class="icon"><i class="fa fa-telegram" aria-hidden="true"></i></i></a>
+                    </li>
+                    <li class="all_contacts-item">
+                        <a href="https://wa.me/79324969146" class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="all_contacts-item">
+                        <a href="tel:+79324969146" class="icon"><i class="fa fa-phone" aria-hidden="true"></i><span> +7 (932) 496-91-46</span></a>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        <main>
+            <div class="promotion">
+                <div class="slide s1 active">При покупке кухне в Midgard до 30 ноября в подарок вы получаете диспоузер Bort на 1000мл</div>
+                <div class="slide s2" data-duration="1000">Сборку осуществляем с помощью лучшего друга</div>
+               
+              </div>
+           
+            <section class="main-title">
+            
+                <div class="main-title_txt">
+                    <h1>Кухни на заказ</h1>
+                    <p>Проектируем и выпускаем корпусную мебель по индивидуальным размерам, 
+                        а также готовую модульную мебель </p>
+                      <p> У нас Вы можете заказать кухни, гардеробные, спальни, шкафы, а также двери</p>
+                </div>
+                <video class="video" loop="loop" autoplay="" muted="">
+                    <source src="/video/video_preview_h264.mp4" type="video/webm" />
+                  </video>
+            </section>
+
+            <section class="whyWe container">
+                <div class="whyWe_cols">
+                    <img src="/img/carpenter.png" alt="">
+                    <h3>14 специалистов</h3>
+                    <p>выполнят даже самые сложные художественные технические проекты</p>
+                </div>
+                <div class="whyWe_cols">
+                    <img src="/img/tools.png" alt="">
+                    <h3>Собственное производство</h3>
+                    <p>которое гарантирует лучшие цены</p>
+                </div>
+                <div class="whyWe_cols">
+                    <img src="/img/calendar.png" alt="">
+                    <h3>Кухня за 15 дней</h3>
+                    <p>оперативное изготовление мебели в срок от 15 дней</p>
+                </div>
+                <div class="whyWe_cols">
+                    <img src="/img/calendar.png" alt="">
+                    <h3>18 месяцев</h3>
+                    <p>бесплатное сервисное обслуживание</p>
+                </div>
+                <div class="whyWe_cols">
+                    <img src="/img/truck.png" alt="">
+                    <h3>Бесплатная доставка</h3>
+                    <p>точно в срок</p>
+                </div>
+                <div class="whyWe_cols">
+                    <img src="/img/3d.png" alt="">
+                    <h3>3D дизайн 
+                        <br>
+                        проект кухни в подарок</h3>
+                </div>
+    
+            </section>
+        
+            
+<section class="ourProjects_slider">
+
+        <div class="itc-slider" data-autoplay="false" data-interval="5000" data-loop="true" data-refresh="true"
+             data-slider="itc-slider">
+          <div class="itc-slider__wrapper">
+            <div class="itc-slider__items">
+              <div class="itc-slider__item"><!-- Начало 1 слайда -->
+                <div class="card">
+                  <div class="card__header">
+                    <img alt="..." class="card__img" height="250" loading="lazy"
+                         src="/img/white-kitchen-1.jpg" width="">
+      <!--               <span class="card__section">Совет эксперта</span> -->
+                  </div>
+                  <h2 class="card__title">Белые фасады</h2>
+                  <div class="card__footer">
+                    <p class="card__author">Столешница Egger</p>
+                    <p class="card__author">Петли и выдвижная система с доводчиками </p>
+                    <p class="card__author">Верхние шкафы открывается за фасады. Внизу мы установили ручки золотистого цвета которые отлично вписались в общий стиль</p>
+                  </div>
+                </div>
+              </div> <!-- Конец 1 слайда -->
+              <div class="itc-slider__item"><!-- Начало 2 слайда -->
+                <div class="card">
+                    <div class="card__header">
+                      <img alt="..." class="card__img" height="250" loading="lazy"
+                           src="/img/white-kitchen-1.jpg" width="">
+        <!--               <span class="card__section">Совет эксперта</span> -->
+                    </div>
+                    <h2 class="card__title">Белые фасады</h2>
+                    <div class="card__footer">
+                      <p class="card__author">Столешница Egger</p>
+                      <p class="card__author">Петли и выдвижная система с доводчиками </p>
+                      <p class="card__author">Верхние шкафы открывается за фасады. Внизу мы установили ручки золотистого цвета которые отлично вписались в общий стиль</p>
+                    </div>
+                  </div>
+              </div><!-- Конец 2 слайда -->
+              <div class="itc-slider__item"><!-- Начало 3 слайда -->
+                <div class="card">
+                    <div class="card__header">
+                      <img alt="..." class="card__img" height="250" loading="lazy"
+                           src="/img/white-kitchen-1.jpg" width="">
+        <!--               <span class="card__section">Совет эксперта</span> -->
+                    </div>
+                    <h2 class="card__title">Белые фасады</h2>
+                    <div class="card__footer">
+                      <p class="card__author">Столешница Egger</p>
+                      <p class="card__author">Петли и выдвижная система с доводчиками </p>
+                      <p class="card__author">Верхние шкафы открывается за фасады. Внизу мы установили ручки золотистого цвета которые отлично вписались в общий стиль</p>
+                    </div>
+                  </div>
+              </div><!-- Конец 3 слайда -->
+              <div class="itc-slider__item"><!-- Начало 4 слайда -->
+                <div class="card">
+                    <div class="card__header">
+                      <img alt="..." class="card__img" height="250" loading="lazy"
+                           src="/img/white-kitchen-1.jpg" width="">
+        <!--               <span class="card__section">Совет эксперта</span> -->
+                    </div>
+                    <h2 class="card__title">Белые фасады</h2>
+                    <div class="card__footer">
+                      <p class="card__author">Столешница Egger</p>
+                      <p class="card__author">Петли и выдвижная система с доводчиками </p>
+                      <p class="card__author">Верхние шкафы открывается за фасады. Внизу мы установили ручки золотистого цвета которые отлично вписались в общий стиль</p>
+                    </div>
+                  </div>
+              </div><!-- Конец 4 слайда -->
+              <div class="itc-slider__item"><!-- Начало 5 слайда -->
+                <div class="card">
+                    <div class="card__header">
+                      <img alt="..." class="card__img" height="250" loading="lazy"
+                           src="/img/white-kitchen-1.jpg" width="">
+        <!--               <span class="card__section">Совет эксперта</span> -->
+                    </div>
+                    <h2 class="card__title">Белые фасады</h2>
+                    <div class="card__footer">
+                      <p class="card__author">Столешница Egger</p>
+                      <p class="card__author">Петли и выдвижная система с доводчиками </p>
+                      <p class="card__author">Верхние шкафы открывается за фасады. Внизу мы установили ручки золотистого цвета которые отлично вписались в общий стиль</p>
+                    </div>
+                  </div>
+              </div><!-- Конец 5 слайда -->
+              <div class="itc-slider__item"><!-- Начало 6 слайда -->
+                <div class="card">
+                    <div class="card__header">
+                      <img alt="..." class="card__img" height="250" loading="lazy"
+                           src="/img/white-kitchen-1.jpg" width="">
+        <!--               <span class="card__section">Совет эксперта</span> -->
+                    </div>
+                    <h2 class="card__title">Белые фасады</h2>
+                    <div class="card__footer">
+                      <p class="card__author">Столешница Egger</p>
+                      <p class="card__author">Петли и выдвижная система с доводчиками </p>
+                      <p class="card__author">Верхние шкафы открывается за фасады. Внизу мы установили ручки золотистого цвета которые отлично вписались в общий стиль</p>
+                    </div>
+                  </div>
+              </div><!-- Конец 6 слайда -->
+              <div class="itc-slider__item"><!-- Начало 7 слайда -->
+                <div class="card">
+                    <div class="card__header">
+                      <img alt="..." class="card__img" height="250" loading="lazy"
+                           src="/img/white-kitchen-1.jpg" width="">
+        <!--               <span class="card__section">Совет эксперта</span> -->
+                    </div>
+                    <h2 class="card__title">Белые фасады</h2>
+                    <div class="card__footer">
+                      <p class="card__author">Столешница Egger</p>
+                      <p class="card__author">Петли и выдвижная система с доводчиками </p>
+                      <p class="card__author">Верхние шкафы открывается за фасады. Внизу мы установили ручки золотистого цвета которые отлично вписались в общий стиль</p>
+                    </div>
+                  </div>
+              </div><!-- Конец 7 слайда -->
+            </div>
+          </div>
+          <button class="itc-slider__btn itc-slider__btn_prev"></button>
+          <button class="itc-slider__btn itc-slider__btn_next"></button>
+      
+        </div>
+      </div>
+      <div style="position:relative; overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/leninskiy_prospekt_23/Z04Ycw5mSkwHQFtvfXtwdn9nZA==/?ll=37.596390%2C55.717341&utm_medium=mapframe&utm_source=maps&z=16.42" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ленинский проспект, 23 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.596390%2C55.717341&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY4NjM3NBJD0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCb0LXQvdC40L3RgdC60LjQuSDQv9GA0L7RgdC_0LXQutGCLCAyMyIKDbRiFkIVj95eQg%2C%2C&z=16.42" width="100%" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+        
+      </main>
+      <footer>
+        <div class="header container">
+            <a href="" class="logo">
+                <img src="./img/logo.jpg" alt="">
+            </a>
+            <div class="contacts">
+                <ul class="all_contacts">
+                    <li class="all_contacts-item">
+                        <a href="https://t.me/midgard_vmr" class="icon"><i class="fa fa-telegram" aria-hidden="true"></i></i></a>
+                    </li>
+                    <li class="all_contacts-item">
+                        <a href="https://wa.me/79324969146" class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="all_contacts-item">
+                        <a href="tel:+79324969146" class="icon"><i class="fa fa-phone" aria-hidden="true"></i><span> +7 (932) 496-91-46</span></a>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://use.fontawesome.com/f2869d0e92.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
+    <script src="./js/app.js"></script> 
 </body>
 </html>
