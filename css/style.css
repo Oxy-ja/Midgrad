@@ -101,6 +101,15 @@ h3 {
 }
 
 /* why-we */
+
+.whyWe {
+    padding: 2rem;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: space-between;
+  }
  
   .whyWe_cols {
     width: calc(19% - 0.1rem);
