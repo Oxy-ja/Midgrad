@@ -104,7 +104,7 @@ h3 {
  
   .whyWe_cols {
     width: calc(19% - 0.1rem);
-    margin-bottom: 15px;
+    margin: 15px auto;
     padding: 1.5%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgb(88,59,42, 0.3);
